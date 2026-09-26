@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>VAEL</title>
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .title {
+            font-size: 70px;
+            letter-spacing: 14px;
+            margin-top: 80px;
+            text-shadow: 0 0 15px white;
+            animation: vaelGlow 3s infinite alternate;
+        }
+
+        @keyframes vaelGlow {
+            from {
+                text-shadow: 0 0 5px white;
+            }
+
+            to {
+                text-shadow: 0 0 25px white;
+            }
+        }
+
+        .hero-image {
+            width: 80%;
+            max-width: 900px;
+            height: auto;
+            margin: 30px auto;
+            display: block;
+        }
+
+        .tagline {
+            font-size: 13px;
+            letter-spacing: 6px;
+            margin-top: 10px;
+            opacity: 0.6;
+        }
+
+        h2 {
+            margin-top: 50px;
+        }
+
+        .season {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 350px;
+            border: 1px solid white;
+            font-size: 20px;
+            letter-spacing: 2px;
+            transition: 0.3s;
+        }
+
+        .season a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .season:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px white;
+        }
+
+        .locked {
+            opacity: 0.5;
+        }
+
+        small {
+            font-size: 12px;
+            letter-spacing: 3px;
+        }
+
+        .about {
+            margin: 80px auto 40px;
+            padding: 30px;
+            max-width: 600px;
+            border-top: 1px solid white;
+            border-bottom: 1px solid white;
+        }
+
+        .about h2 {
+            letter-spacing: 5px;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .about p {
+            font-size: 17px;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 600px) {
+
+            .title {
+                font-size: 45px;
+                letter-spacing: 8px;
+                margin-top: 50px;
+            }
+
+            .hero-image {
+                width: 90%;
+            }
+
+            .season {
+                width: 80%;
+                box-sizing: border-box;
+            }
+
+            .about {
+                width: 80%;
+                box-sizing: border-box;
+                margin-top: 50px;
+            }
+
+            .about p {
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 class="title">VAEL 👁️</h1>
+
+    <img class="hero-image"
+         src="file_00000000d040820885c9728ff52f75de.png"
+         alt="VAEL">
+
+    <p class="tagline">THE WORLD BEYOND BROOK</p>
+
+    <h2>SEASONS</h2>
+
+    <div class="season">
+        <a href="season1.html">
+            SEASON 1<br>
+            THE ECLIPSED
+        </a>
+    </div>
+
+    <div class="season locked">
+        SEASON 2<br>
+        THE BLACK MISSION<br>
+        <small>COMING SOON</small>
+    </div>
+
+    <div class="season locked">
+        SEASON 3<br>
+        THE CHOSEN<br>
+        <small>COMING SOON</small>
+    </div>
+
+    <div class="season locked">
+        SEASON 4<br>
+        VAEL<br>
+        <small>COMING SOON</small>
+    </div>
+
+    <div class="about">
+
+        <h2>ABOUT VAEL</h2>
+
+        <p>
+            A world of mystery, conflict, and unanswered questions.
+        </p>
+
+    </div>
+
+</body>
+</html>
